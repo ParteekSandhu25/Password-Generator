@@ -107,7 +107,7 @@ h1 {
   transform: translateX(-20px);
   /* transform: translateY(2px); */
   color: var(--vb-yellow);
-  padding: 4px 10px;
+  padding: 5px 10px;
   border-radius: 1.3rem;
   scale: 0%;
   transition: 0.2s ease-in;
@@ -249,6 +249,25 @@ h1 {
 }
 
 .slider::-webkit-slider-thumb:hover {
+  outline: 2px solid var(--vb-yellow);
+  background-color: black;
+  box-shadow: 0px 0px 25px 5px rgba(255, 229, 61, 0.8);
+}
+
+/* Code for running in mozilla browser */
+.slider::-moz-range-thumb {
+  appearance: none;
+  height: 2rem;
+  width: 2rem;
+  border-radius: 50%;
+  background-color: var(--vb-yellow);
+  cursor: pointer;
+  box-sizing: 0px 0px 20px 0px rgba(255, 229, 61, 0.5);
+  transition: all 100ms ease-in;
+  position: relative;
+}
+
+.slider::-moz-range-thumb:hover {
   outline: 2px solid var(--vb-yellow);
   background-color: black;
   box-shadow: 0px 0px 25px 5px rgba(255, 229, 61, 0.8);
